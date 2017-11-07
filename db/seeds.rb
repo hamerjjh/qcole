@@ -15,7 +15,7 @@ wall = Picture.create(
     price: 1000,
     size: "30 x 40",
     prints: "Available",
-    photo_url: "./images/wall.jpg",
+    photo_url: "https://i.imgur.com/ejpzZOO.jpg",
     sold: false 
 )
 
@@ -24,7 +24,7 @@ free = Picture.create(
     price: 750,
     size: "16 x 20",
     prints: "Available",
-    photo_url: "./images/free.jpg",
+    photo_url: "https://i.imgur.com/gt6iqL4.jpg",
     sold: false 
 )
 
@@ -33,7 +33,7 @@ migos = Picture.create(
     price: 300,
     size: "18 x 24",
     prints: "Not Available",
-    photo_url: "./images/migos.jpg",
+    photo_url: "https://i.imgur.com/JL1rknN.jpg",
     sold: true 
 )
 
@@ -42,7 +42,7 @@ dbz = Picture.create(
     price: 375,
     size: "28 x 36",
     prints: "Not Available",
-    photo_url: "./images/gohan.jpg",
+    photo_url: "https://i.imgur.com/8IJKjx0.jpg",
     sold: true
 )
 
@@ -51,7 +51,7 @@ chance = Picture.create(
     price: 350,
     size: "12 x 24 (3 pieces)",
     prints: "Not Available",
-    photo_url: "./images/chance.jpg",
+    photo_url: "https://i.imgur.com/FfvWKEG.jpg",
     sold: true
 )
 
@@ -60,7 +60,7 @@ scarface = Picture.create(
     price: 300, 
     size: "18 x 24",
     prints: "Not Available", 
-    photo_url: "./images/scarface.jpg",
+    photo_url: "https://i.imgur.com/wTyM4rU.jpg",
     sold: true
 )
 
@@ -69,7 +69,7 @@ jesus = Picture.create(
     price: 300,
     size: "12 x 24",
     prints: "Not Available",
-    photo_url: "./images/spike.jpg",
+    photo_url: "https://i.imgur.com/Cz9MpqD.jpg",
     sold: true
 )
 
@@ -78,7 +78,7 @@ joker = Picture.create(
     price: 185,
     size: "18 x 24",
     prints: "Available",
-    photo_url: "./images/joker.jpg",
+    photo_url: "https://i.imgur.com/9ceVR08.jpg",
     sold: false
 )
 
@@ -87,6 +87,6 @@ malcom = Picture.create(
     price: 375,
     size: "28 x 36",
     prints: "Not Available",
-    photo_url: "./images/malcom.jpg",
+    photo_url: "https://i.imgur.com/qtn3fbR.jpg",
     sold: true
 )
