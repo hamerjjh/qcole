@@ -29,7 +29,7 @@ free = Picture.create(
 )
 
 migos = Picture.create(
-    name: "Do It Look Like I was left off Bad &amp; Boujee",
+    name: "Do It Look Like I was left off Bad \& Boujee",
     price: 300,
     size: "18 x 24",
     prints: "Not Available",

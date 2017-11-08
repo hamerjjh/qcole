@@ -6,11 +6,13 @@ import styled from "styled-components"
 import Picture from "./Picture"
 
 const PicContainer = FlexRow.extend`
+    
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 10px;
     margin-left: 15px;
     margin-right: 15px;
-    font-family: 'Rammetto One', cursive;
+    font-family: 'Oswald', sans-serif;
 
 `
 
@@ -29,7 +31,7 @@ const PicCard = styled.div`
     justify-content: space-around;
     float: left;
     padding: 20px 10px 15px 10px;
-    background: rgba(216, 212, 212, 1);
+    background: tan;
     border: 1px solid #fff;
     -moz-box-shadow: 0px 2px 15px #333;
     position: relative;

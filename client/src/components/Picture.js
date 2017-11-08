@@ -4,39 +4,72 @@ import styled from "styled-components"
 import { Link } from 'react-router-dom'
 import { FlexRow } from "../styled-components/FlexContainers";
 
-const PicImageBanner = styled.div`
+const PicFrame = styled.div`
 
     img {
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-        background-repeat: no-repeat;
-        padding-top: 0px;
-        margin-top: 15px;
-        margin-right: 0px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border:solid 2px;
+        border-bottom-color:#ffe;
+        border-left-color:#eed;
+        border-right-color:#eed;
+        border-top-color:#ccb;
+        max-height:100%;
+        max-width:100%;
     }
+
+    background-color:#ddc;
+    border:solid 5vmin #eee;
+    border-bottom-color:#fff;
+    border-left-color:#eee;
+    border-radius:2px;
+    border-right-color:#eee;
+    border-top-color:#ddd;
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+    box-sizing:border-box;
+    display:inline-block;
+    margin:2vh 10vw;
+    max-width: 45%;
+    min-width:377px;
+    padding:5vmin;
+    position:relative;
+    text-align:center;
+    &:before {
+      border-radius:2px;
+      bottom:-2vmin;
+      box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+      content:"";
+      left:-2vmin;
+      position:absolute;
+      right:-2vmin;
+      top:-2vmin;
+    }
+    &:after {
+      border-radius:2px;
+      bottom:-2.5vmin;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+      content:"";
+      left:-2.5vmin;
+      position:absolute;
+      right:-2.5vmin;
+      top:-2.5vmin;
+    }
+  
   `
 
-  const PicContainer = FlexRow.extend`
+  const PicContainer = styled.div`
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0   6px 20px 0 rgba(0, 0, 0, 0.19);
         padding-top: 0px;
         padding-bottom: 10px;
         background-color: white;
         opacity: .8;
         justify-content: center;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 20px;
   `
 
 const PicName = styled.div`
     font-family: 'Rammetto One', cursive;
-    font-size: 38px;
+    font-size: 34px;
     text-align: center;
     letter-spacing: 2px;
-    padding-top: 25px;
+    padding-top: 5px;
 `
 
 const PicBody = styled.div`
@@ -44,13 +77,26 @@ const PicBody = styled.div`
     font-size: 30px;
     text-align: center;
     letter-spacing: 2px;
-    padding-top: 25px;
+    padding-top: 10px;
     text-align: center;
-    p {
-        font-size: 24px;
-        font-family: 'Cabin Condensed', sans-serif;
-    }
+ 
   
+`
+const Info = styled.div`
+font-size: 20px;
+text-align: center;
+display: inline-block;
+width:35%;
+background: white;
+border: 1px solid #B9D6C2;
+margin-bottom: 8px;
+margin-right: 8px;
+margin-left: 0px;
+border-radius: 50px;
+padding: 2em;
+position: relative;
+
+
 `
 
   const NewPostForm = styled.div`
@@ -92,15 +138,20 @@ const PicBody = styled.div`
             
                     return (
                         <div>
-                        <PicImageBanner><img src={this.state.picture.photo_url} /></PicImageBanner>
                         <PicContainer>
+                        <PicName>{this.state.picture.name}</PicName>
                         <PicBody>
                           
-                            <PicName> {this.state.picture.name}</PicName>
+                            
+                                <PicFrame>
+                            <img src={this.state.picture.photo_url} />
+                                </PicFrame>
+                                <Info>
                             <p>Price: ${this.state.picture.price}</p>
                             <p>Size: {this.state.picture.size}</p>
                             <p>Prints: {this.state.picture.prints}</p>
                             <p>Sold: {sold}</p>
+                                </Info>
                          
                     
                            </PicBody>

@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const List = styled.div`
     width: 100vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #f9a84a;
+    background-color: black;
     opacity: .8;
     margin: 0px;
     padding-bottom: 10px;
@@ -23,7 +23,7 @@ const List = styled.div`
         font-size: 22px;
     }
     a:visited {
-        color: rgb(17, 17, 114);
+        color: white;
     }
 `
 
