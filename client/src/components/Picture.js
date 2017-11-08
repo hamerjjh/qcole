@@ -65,11 +65,11 @@ const PicFrame = styled.div`
   `
 
 const PicName = styled.div`
-    font-family: 'Rammetto One', cursive;
+    font-family: 'Oswald', sans-serif;
     font-size: 34px;
     text-align: center;
     letter-spacing: 2px;
-    padding-top: 5px;
+    padding-top: 8px;
 `
 
 const PicBody = styled.div`
@@ -146,16 +146,20 @@ position: relative;
                                 <PicFrame>
                             <img src={this.state.picture.photo_url} />
                                 </PicFrame>
+                            
                                 <Info>
                             <p>Price: ${this.state.picture.price}</p>
                             <p>Size: {this.state.picture.size}</p>
                             <p>Prints: {this.state.picture.prints}</p>
                             <p>Sold: {sold}</p>
                                 </Info>
-                         
                     
                            </PicBody>
+
+                           
                                 </PicContainer>
+
+                                
                              
                                </div>
                     );

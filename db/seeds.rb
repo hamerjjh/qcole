@@ -83,7 +83,7 @@ joker = Picture.create(
 )
 
 malcom = Picture.create(
-    name: "X x Pac",
+    name: "X \& Pac",
     price: 375,
     size: "28 x 36",
     prints: "Not Available",

@@ -21,7 +21,7 @@ const LogoPic = styled.div`
 img {
     max-width: 25%;
     max-height: 10%;
-    padding: 20px;
+    padding: 60px;
 }
 text-align: center;
 
@@ -31,7 +31,7 @@ const SplashPage = (props) => {
     return (
         <div>
         <SplashBackground>
-            <SplashHeader> QCole Artwork</SplashHeader>   
+              
         </SplashBackground>
         <LogoPic>
         <img src= "https://i.imgur.com/LDmJjE8.png" />

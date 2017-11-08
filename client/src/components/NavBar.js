@@ -17,7 +17,7 @@ const List = styled.div`
         list-style-type: none;
         padding-top: 2px;
         padding-bottom: 2px;
-        font-family: 'Rammetto One', cursive;
+        font-family: 'Oswald', sans-serif;
         margin-top: 0px;
         margin-bottom: 0px;
         font-size: 22px;
@@ -35,9 +35,9 @@ const NavBar = () => {
     return (
         <List>
         <ul>
-            <li><Link to="/gallery">Gallery</Link></li>
-            <PageTitle><li><Link to="/">Home</Link></li></PageTitle>
-            <li><Link to="/commission">Commission</Link></li>
+            <li><Link to="/gallery">GALLERY</Link></li>
+            <li><Link to="/">HOME</Link></li>
+            <li><Link to="/commission">COMMISSION</Link></li>
         </ul>
         </List>
     );
