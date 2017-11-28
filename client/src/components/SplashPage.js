@@ -34,6 +34,7 @@ display: flex;
 justify-content: center;
 font-size: 2em;
 a{
+    color: blue;
     padding-top: 15px;
     margin-right: 20px;
 }
