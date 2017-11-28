@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import FontAwesome from 'react-fontawesome'
+import faStyles from 'font-awesome/css/font-awesome.css';
 
 
 const List = styled.div`
@@ -31,13 +33,29 @@ const List = styled.div`
 const PageTitle = styled.div`
     font-size: 28px;
 `
+const Social = styled.div`
+display: flex;
+justify-content: center;
+font-size: 1.5em;
+a{
+    color: white;
+    margin-right: 20px;
+}
+
+` 
 
 const NavBar = () => {
     return (
         <List>
         <ul>
             <li><Link to="/gallery">GALLERY</Link></li>
+            <Social>
+       <a href="https://www.instagram.com/qcole/" target="_blank"> <FontAwesome name='instagram' size='20x'/> </a>
+            </Social>
             <li><Link to="/">HOME</Link></li>
+            <Social>
+            <a href="https://www.facebook.com/quinton.cole.92" target="_blank"> <FontAwesome name='facebook' size='20x'/> </a>
+        </Social>
             <li><Link to="/commission">COMMISSION</Link></li>
         </ul>
         

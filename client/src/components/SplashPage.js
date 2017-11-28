@@ -29,17 +29,7 @@ img {
 text-align: center;
 
 `
-const Social = styled.div`
-display: flex;
-justify-content: center;
-font-size: 2em;
-a{
-    color: blue;
-    padding-top: 15px;
-    margin-right: 20px;
-}
 
-` 
 
 const SplashPage = (props) => {
     return (
@@ -47,10 +37,6 @@ const SplashPage = (props) => {
         <SplashBackground>
               
         </SplashBackground>
-        <Social>
-       <a href="https://www.instagram.com/qcole/" target="_blank"> <FontAwesome name='instagram' size='20x'/> </a>
-        <a href="https://www.facebook.com/quinton.cole.92" target="_blank"> <FontAwesome name='facebook' size='20x'/> </a>
-        </Social>
         <LogoPic>
         <img src= "https://i.imgur.com/LDmJjE8.png" />
         </LogoPic>
