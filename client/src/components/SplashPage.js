@@ -3,6 +3,8 @@ import axios from "axios"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 import FontAwesome from 'react-fontawesome'
+import faStyles from 'font-awesome/css/font-awesome.css';
+
 
 const SplashBackground = styled.div`
     
@@ -27,6 +29,16 @@ img {
 text-align: center;
 
 `
+const Social = styled.div`
+display: flex;
+justify-content: center;
+font-size: 2em;
+a{
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+` 
 
 const SplashPage = (props) => {
     return (
@@ -34,13 +46,10 @@ const SplashPage = (props) => {
         <SplashBackground>
               
         </SplashBackground>
-        <FontAwesome
-        className='super-crazy-colors'
-        name='rocket'
-        size='2x'
-        spin
-        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-      />
+        <Social>
+       <a href="#"> <FontAwesome name='instagram' size='20x'/> </a>
+        <a href="#"> <FontAwesome name='facebook' size='20x'/> </a>
+        </Social>
         <LogoPic>
         <img src= "https://i.imgur.com/LDmJjE8.png" />
         </LogoPic>
