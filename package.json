@@ -9,6 +9,6 @@
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "dependencies": {
-    "react-fontawesome": "^1.6.1"
+   
   }
 }

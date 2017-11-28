@@ -36,7 +36,7 @@ const PageTitle = styled.div`
 const Social = styled.div`
 display: flex;
 justify-content: center;
-font-size: 1.5em;
+font-size: 1.3em;
 a{
     color: white;
     margin-right: 20px;
