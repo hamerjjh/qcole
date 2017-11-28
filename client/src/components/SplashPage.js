@@ -47,8 +47,8 @@ const SplashPage = (props) => {
               
         </SplashBackground>
         <Social>
-       <a href="#"> <FontAwesome name='instagram' size='20x'/> </a>
-        <a href="#"> <FontAwesome name='facebook' size='20x'/> </a>
+       <a href="https://www.instagram.com/qcole/" target="_blank"> <FontAwesome name='instagram' size='20x'/> </a>
+        <a href="https://www.facebook.com/quinton.cole.92" target="_blank"> <FontAwesome name='facebook' size='20x'/> </a>
         </Social>
         <LogoPic>
         <img src= "https://i.imgur.com/LDmJjE8.png" />
