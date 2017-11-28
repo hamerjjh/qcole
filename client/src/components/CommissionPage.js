@@ -21,6 +21,9 @@ const PostForm = styled.div`
     margin-bottom: 20px;
     align-items: center;
 `
+const Clear = styled.div`
+    clear: both;
+`
 const PostBox = styled.div`
 text-align: center;
  margin-top: 10px;
@@ -41,12 +44,14 @@ textarea, input {
 }
 `
 const About = styled.div`
+    display: flex;
+    justify-content: center;
     img {
-        max-height:40%;
-        max-width:40%;
+        height:35%;
+        width:35%;
         
     }
-    float: right;
+
     
     
 
@@ -60,24 +65,19 @@ class CommissionPage extends Component {
             <div>
                 
                 <About> 
-                <img src ="https://i.imgur.com/dRMB5PO.jpg" /> Quinton O. Cole, raised in PG County, MD and a Morehouse graduate has been
-leveraging and creating new opportunity through his art work. With his name
-recognition growing in the Atlanta area, Quinton strives to become the best artist he
-can. He has completed numerous custom commission pieces for athletes across the
-NFL &amp; NBA and looks to build upon his clientele. Quinton’s journey as an artist
-started in middle school as he began to do sketches for friends, later in high school
-took art classes and entered competitions. Although, throughout his college years he
-got away from his passion, he later picked things back up in 2016. Going forward, he
-looks to take his brand to new heights by showcasing his work in exhibits and taking
-advantage of opportunities that present themselves.
+                <img src ="https://i.imgur.com/dRMB5PO.jpg" /> <br/>
             </About>
+            <Clear></Clear>
             <HeadText>
                 <p>For custom commissionss pieces, live paintings, murals and all other inquires please enter information below. 
-                    Once submitted,an email will be sent to qcoleartwork@outlook.com  </p>
+                    <div> </div>
+                    Once submitted, an email will be sent to qcoleartwork@outlook.com  </p>
                 </HeadText>
+                <Clear></Clear>
                 <PostForm>
                 <form>
                     <PostBox>
+
                     <div>
                         <label htmlFor="name">Name: </label>
                         <input  name="name" type="text" value="Name" />
@@ -91,7 +91,7 @@ advantage of opportunities that present themselves.
                         <input name="Message" type="text" value="Message" />
                     </div>
                     </PostBox>
-                    <button>Submit Request</button>
+                    <button> <a href="mailto:qcoleartwork@outlook.com">Submit Request </a></button>
                 </form>
                 </PostForm>
             </div>

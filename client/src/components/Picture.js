@@ -6,6 +6,7 @@ import { FlexRow } from "../styled-components/FlexContainers";
 
 const PicFrame = styled.div`
 
+    
     img {
         border:solid 2px;
         border-bottom-color:#ffe;
@@ -60,7 +61,6 @@ const PicFrame = styled.div`
         padding-top: 0px;
         padding-bottom: 10px;
         background-color: white;
-        opacity: .8;
         justify-content: center;
   `
 
@@ -73,6 +73,7 @@ const PicName = styled.div`
 `
 
 const PicBody = styled.div`
+    display: flex;
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 30px;
     text-align: center;
@@ -88,7 +89,7 @@ text-align: center;
 display: inline-block;
 width:35%;
 background: white;
-border: 1px solid #B9D6C2;
+border: 1px solid black;
 margin-bottom: 8px;
 margin-right: 8px;
 margin-left: 0px;
@@ -148,6 +149,8 @@ position: relative;
                                 </PicFrame>
                             
                                 <Info>
+                                    <br/>
+                                    <br/>
                             <p>Price: ${this.state.picture.price}</p>
                             <p>Size: {this.state.picture.size}</p>
                             <p>Prints: {this.state.picture.prints}</p>

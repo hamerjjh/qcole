@@ -31,7 +31,7 @@ const PicCard = styled.div`
     justify-content: space-around;
     float: left;
     padding: 20px 10px 15px 10px;
-    background: tan;
+    background: rgb(96, 9, 9);
     border: 1px solid #fff;
     -moz-box-shadow: 0px 2px 15px #333;
     position: relative;
@@ -49,10 +49,9 @@ const PicCard = styled.div`
     }
     a {
         padding-bottom: 10px;
+        color: white;
     }
-    a:visited {
-        color: rgb(17, 17, 114);
-    }
+   
 `
 
 

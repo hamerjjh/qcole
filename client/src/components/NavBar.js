@@ -22,7 +22,8 @@ const List = styled.div`
         margin-bottom: 0px;
         font-size: 22px;
     }
-    a:visited {
+    
+    a {
         color: white;
     }
 `
@@ -39,6 +40,7 @@ const NavBar = () => {
             <li><Link to="/">HOME</Link></li>
             <li><Link to="/commission">COMMISSION</Link></li>
         </ul>
+        
         </List>
     );
 };

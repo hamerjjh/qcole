@@ -2,6 +2,7 @@ import React from 'react';
 import axios from "axios"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
+import FontAwesome from 'react-fontawesome'
 
 const SplashBackground = styled.div`
     
@@ -33,6 +34,13 @@ const SplashPage = (props) => {
         <SplashBackground>
               
         </SplashBackground>
+        <FontAwesome
+        className='super-crazy-colors'
+        name='rocket'
+        size='2x'
+        spin
+        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+      />
         <LogoPic>
         <img src= "https://i.imgur.com/LDmJjE8.png" />
         </LogoPic>
