@@ -69,7 +69,7 @@ class CommissionPage extends Component {
             </About>
             <Clear></Clear>
             <HeadText>
-                <p>For custom commissionss pieces, live paintings, murals and all other inquires please enter information below. 
+                <p>For custom commissionss pieces, live paintings, murals and all other inquires please submit request with Name, Contact Info and Piece Idea. 
                     <div> </div>
                     Once submitted, an email will be sent to qcoleartwork@outlook.com  </p>
                 </HeadText>
@@ -78,18 +78,6 @@ class CommissionPage extends Component {
                 <form>
                     <PostBox>
 
-                    <div>
-                        <label htmlFor="name">Name: </label>
-                        <input  name="name" type="text" value="Name" />
-                    </div>
-                    <div>
-                        <label htmlFor="email">Email: </label>
-                        <input name="email" type="text" value="Email" />
-                    </div>
-                    <div>
-                        <label htmlFor="Message">Message: </label>
-                        <input name="Message" type="text" value="Message" />
-                    </div>
                     </PostBox>
                     <button> <a href="mailto:qcoleartwork@outlook.com">Submit Request </a></button>
                 </form>

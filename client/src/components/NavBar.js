@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import FontAwesome from 'react-fontawesome'
-import faStyles from 'font-awesome/css/font-awesome.css';
 
 
 const List = styled.div`
