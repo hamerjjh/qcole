@@ -22,11 +22,15 @@ const SplashLink = styled.div`
 `
 const LogoPic = styled.div`
 img {
-    max-width: 25%;
-    max-height: 10%;
+    width: 25%;
+    height: 10%;
     padding: 60px;
+
 }
 text-align: center;
+
+
+
 
 `
 
@@ -34,12 +38,12 @@ text-align: center;
 const SplashPage = (props) => {
     return (
         <div>
-        <SplashBackground>
-              
-        </SplashBackground>
-        <LogoPic>
-        <img src= "https://i.imgur.com/LDmJjE8.png" />
-        </LogoPic>
+            <SplashBackground>
+
+            </SplashBackground>
+            <LogoPic>
+                <img src="https://i.imgur.com/LDmJjE8.png" />
+            </LogoPic>
         </div>
     );
 };

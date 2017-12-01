@@ -38,7 +38,7 @@ justify-content: center;
 font-size: 1.3em;
 a{
     color: white;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 ` 
@@ -48,14 +48,14 @@ const NavBar = () => {
         <List>
         <ul>
             <li><Link to="/gallery">GALLERY</Link></li>
-            <Social>
-       <a href="https://www.instagram.com/qcole/" target="_blank"> <FontAwesome name='instagram' size='20x'/> </a>
-            </Social>
+           
             <li><Link to="/">HOME</Link></li>
-            <Social>
-            <a href="https://www.facebook.com/quinton.cole.92" target="_blank"> <FontAwesome name='facebook' size='20x'/> </a>
-        </Social>
+        
             <li><Link to="/commission">COMMISSION</Link></li>
+            <Social>
+            <a href="https://www.instagram.com/qcole/" target="_blank"> <FontAwesome name='instagram' size='3x'/> </a>
+            <a href="https://www.facebook.com/quinton.cole.92" target="_blank"> <FontAwesome name='facebook' size='3x'/> </a>
+            </Social>
         </ul>
         
         </List>

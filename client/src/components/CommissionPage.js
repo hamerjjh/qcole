@@ -51,10 +51,11 @@ const About = styled.div`
         width:35%;
         
     }
-
-    
-    
-
+`
+const Button = styled.div`
+   padding: 30px;
+   border-color: black;
+   border-radius: 50%;
 `
 
 
@@ -79,7 +80,7 @@ class CommissionPage extends Component {
                     <PostBox>
 
                     </PostBox>
-                    <button> <a href="mailto:qcoleartwork@outlook.com">Submit Request </a></button>
+                    <Button> <a href="mailto:qcoleartwork@outlook.com">Submit Request </a></Button>
                 </form>
                 </PostForm>
             </div>
